@@ -12,27 +12,26 @@ public class MovablePoint implements Movable {
         this.ySpeed = ySpeed;
     }
 
-    @Override
+
     public void moveUp() {
         y -= ySpeed;
     }
 
-    @Override
+
     public void moveDown() {
         y += ySpeed;
     }
 
-    @Override
     public void moveRight() {
         x += xSpeed;
     }
 
-    @Override
+
     public void moveLeft() {
         x -= xSpeed;
     }
 
-    @Override
+
     public String toString() {
         return String.format("(%d, %d), speed=(%d, %d)", x, y, xSpeed, ySpeed);
     }
